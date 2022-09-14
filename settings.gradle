@@ -1,0 +1,39 @@
+pluginManagement {
+
+    //参考https://docs.gradle.org/current/userguide/custom_plugins.html
+//    resolutionStrategy {
+//        eachPlugin {
+//            println("resolutionStrategy eachPlugin ${requested.id.namespace}")
+//            if (requested.id.namespace == 'com.sip.plugins') {
+//                useModule("com.sip.plugins:pgyplugin:${requested.version}")
+//            }
+//        }
+//    }
+
+
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+//        maven { url 'https://jitpack.io' }
+    }
+}
+dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+
+//        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "PTApplication"
+include ':app'
+include ':mylibrary'
