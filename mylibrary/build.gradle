@@ -58,7 +58,7 @@ dependencies {
 //}
 
 
-group = 'com.sip'
+group = 'cn.keepcoded'
 version = '1.0.0'
 
 pluginBundle {
@@ -70,7 +70,7 @@ pluginBundle {
 gradlePlugin {
     plugins {
         create('pgyplugin') {
-            id = 'com.sip.pgyplugin'
+            id = 'cn.keepcoded.pgyplugin'
             displayName = 'Gradlde Pgyer Plugin'
             description = 'Gradle Plugin to upload Pgyer'
             implementationClass = 'com.example.gradle.mylibrary.PgyPlugin'

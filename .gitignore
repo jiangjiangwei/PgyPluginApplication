@@ -14,3 +14,5 @@
 .externalNativeBuild
 .cxx
 local.properties
+/ubmission for com.sip.pgyplugin. Your plugin was flagged for manual review because of the following issue(s)
+/no user-facing documentation and is thus unlikely to be used by the community. If this is a private plugin, consider publishing it to a private artifact repository.
