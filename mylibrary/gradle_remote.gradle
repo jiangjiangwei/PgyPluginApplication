@@ -1,0 +1,20 @@
+group = 'cn.keepcoded'
+version = '1.0.1'
+
+pluginBundle {
+    website = 'https://github.com/jiangjiangwei/PgyPluginApplication'
+    vcsUrl = 'https://github.com/jiangjiangwei/PgyPluginApplication.git'
+    tags = ['pgyer', 'pgyplugin', 'pgyerplugin']
+}
+
+gradlePlugin {
+    plugins {
+        create('pgyplugin') {
+            id = 'cn.keepcoded.pgyplugin'
+            displayName = 'Gradlde Pgyer Plugin'
+            description = 'Gradle Plugin to upload Pgyer'
+            implementationClass = 'com.example.gradle.mylibrary.PgyPlugin'
+        }
+    }
+}
+
